@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Following Extractor</title>
+  <style>
+    body {
+      width: 800px;
+      padding: 10px;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+    #userList {
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .bio {
+      max-width: 300px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .bio:hover {
+      white-space: normal;
+      overflow: visible;
+    }
+    #stats {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button id="extractButton">Extract Following List</button>
+  <button id="exportButton" style="display: none;">Export to CSV</button>
+  <div id="result"></div>
+  <div id="userList"></div>
+  <div id="stats"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
